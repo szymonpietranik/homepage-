@@ -1,4 +1,4 @@
-alert  ('hello')
+aler  ('hello')
 const name = 'Szymon';
 const age = 24;
 console.log(name);
