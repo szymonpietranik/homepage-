@@ -1,29 +1,58 @@
-
-
-
-
-body { background: #1460AA;
-
+.body {
+  background: #fefefe;
 }
-h1 {color: whitesmoke;
-
+.header {
 }
-h2 {color: #1460AA;
-
+.navigation {
+  background: #004385;
+  padding: 32px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-
-h3 {color: rgb(170, 20, 83);
-
-}
-
-section {background: whitesmoke;
-
+.navigation__link {
+  color: #f0f6f6;
+  
 }
 
-article { background: rgb(92, 156, 221);
-
+.main {
+  margin: 32px auto;
+  max-width: 1000px;
+  padding: 50px 0 0 0
 }
 
-footer { color: whitesmoke;
+.main__heading {
+}
 
+.about {
+}
+
+.about__heading {
+}
+
+.about__paragraph {
+}
+
+.secondary-heading {
+}
+
+.week-summary {
+  background-color: whitesmoke;
+}
+
+.week-summary__title {
+  color: #5bc0eb;
+}
+
+.week-summary__description {
+  color: #222222;
+}
+
+.footer {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.footer__top {
 }
