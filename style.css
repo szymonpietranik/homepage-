@@ -1,5 +1,6 @@
 .body {
   background: #fefefe;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
 .header {
 }
@@ -10,16 +11,17 @@
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: space-around;
 }
 .navigation__link {
   color: #f0f6f6;
-  
 }
 
 .main {
   margin: 32px auto;
   max-width: 1000px;
-  padding: 50px 0 0 0
+  padding: 50px 0 0 0;
 }
 
 .main__heading {
