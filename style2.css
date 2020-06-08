@@ -6,7 +6,16 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+body {
+  display: grid;
+  grid-template-areas:
+    "navigation navigation"
+    "main main"
+    "footer footer";
+  grid-template-columns: 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
 .main {
   display: grid;
   grid-template-areas:
@@ -17,7 +26,15 @@ html {
   column-gap: 16px;
   row-gap: 16px;
 }
-
+.header {
+  grid-area: navigation;
+}
 .main__header {
   grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
 }
