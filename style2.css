@@ -6,3 +6,18 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.main {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "article article"
+    "article article";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.main__header {
+  grid-area: header;
+}
