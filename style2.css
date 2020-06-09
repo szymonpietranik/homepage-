@@ -9,9 +9,9 @@ html {
 body {
   display: grid;
   grid-template-areas:
-    "navigation navigation"
-    "main main"
-    "footer footer";
+    "navigation "
+    "main "
+    "footer ";
   grid-template-columns: 1fr;
   column-gap: 16px;
   row-gap: 16px;
@@ -31,6 +31,12 @@ body {
 }
 .header {
   grid-area: navigation;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  padding: 32px;
 }
 .main__header {
   grid-area: header;
@@ -44,12 +50,18 @@ body {
   grid-area: footer;
   max-width: 1200px;
   margin: 32px auto;
+  font-size: 16px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: hotpink;
 }
 
 .article {
   background-color: #ffffff;
   color: #333333;
-  width: px;
   min-height: 400px;
+  max-width: 512px;
   border-radius: 11px;
 }
