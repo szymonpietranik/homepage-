@@ -1,9 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 .body {
-  background: #fefefe;
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  background-color: #202020;
+  color: white;
+  font-family: "Fira Code", sans-serif;
 }
-.header {
-}
+
 .navigation {
   background: #004385;
   padding: 32px;
@@ -12,10 +20,12 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .navigation__link {
-  color: #f0f6f6;
+  text-decoration: none;
+  color: hotpink;
+  font-size: 24px;
 }
 
 .main {
@@ -24,27 +34,10 @@
   padding: 50px 0 0 0;
 }
 
-.main__heading {
-}
-
-.about {
-}
-
-.about__heading {
-}
-
-.about__paragraph {
-}
-
-.secondary-heading {
-}
-
 .week-summary {
-  background-color: whitesmoke;
-}
-
-.week-summary__title {
-  color: #5bc0eb;
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 11px;
 }
 
 .week-summary__description {
@@ -55,6 +48,7 @@
   margin: 0 auto;
   max-width: 1000px;
 }
-
-.footer__top {
+.footer__link {
+  text-decoration: none;
+  color: hotpink;
 }

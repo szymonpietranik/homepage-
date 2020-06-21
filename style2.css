@@ -30,10 +30,10 @@ body {
   row-gap: 64px;
   padding: 32px 0 0 0;
 }
-
 .navigation__link {
   text-decoration: none;
   color: hotpink;
+  font-size: 24px;
 }
 .navigation {
   grid-area: navigation;
@@ -72,4 +72,8 @@ body {
   min-height: 400px;
   max-width: 512px;
   border-radius: 11px;
+}
+
+@media screen and (min-width 768px);
+ {
 }
