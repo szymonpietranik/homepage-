@@ -12,28 +12,38 @@ html {
   font-family: "Fira Code", sans-serif;
 }
 
-.navigation {
+.main {
+  margin: 60px auto;
+  max-width: 1000px;
+}
+.hamburger {
+  background-color: hotpink;
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  border: none;
+}
+.header {
+  min-height: 60px;
   background: #004385;
-  padding: 32px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: space-evenly;
+}
+.navigation {
+  display: none;
+  padding: 16px;
+}
+.navigation--open {
+  display: block;
 }
 .navigation__link {
+  display: block;
   text-decoration: none;
   color: hotpink;
   font-size: 24px;
 }
-
-.main {
-  margin: 32px auto;
-  max-width: 1000px;
-  padding: 50px 0 0 0;
-}
-
 .week-summary {
   background-color: #ffffff;
   color: #333333;
@@ -54,10 +64,27 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+  .main {
+    margin: 114px auto;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
     row-gap: 16px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .navigation {
+    padding: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .navigation__link {
+    text-decoration: none;
+    color: hotpink;
+    font-size: 24px;
   }
 }
