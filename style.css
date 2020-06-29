@@ -44,12 +44,14 @@ html {
   color: hotpink;
   font-size: 24px;
 }
+.navigation__link:hover {
+  border-bottom: 1px solid hotpink;
+}
 .week-summary {
   background-color: #ffffff;
   color: #333333;
   border-radius: 11px;
 }
-
 .week-summary__description {
   color: #222222;
 }
