@@ -1,39 +1,46 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
-
+  box-sizing: inherit;
+}
 .body {
   background-color: #202020;
   color: white;
-  font-family: "Fira Code", sans-serif; }
+  font-family: "Fira Code", sans-serif;
+}
 
 .footer {
   margin: 0 auto;
-  max-width: 1000px; }
-  .footer__link {
+  max-width: 1000px;
+  &__link {
     text-decoration: none;
-    color: hotpink; }
+    color: hotpink;
+  }
+}
 
-@media screen and (min-width: 768px) {
-  .grid {
+.grid {
+  @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
-    row-gap: 16px; } }
+    row-gap: 16px;
+  }
+}
 
 .hamburger {
   background-color: hotpink;
   position: absolute;
   top: 20px;
   right: 12px;
-  border: none; }
+  border: none;
   @media screen and (min-width: 768px) {
-    .hamburger {
-      display: none; } }
+    display: none;
+  }
+}
 
 .header {
   min-height: 60px;
@@ -41,57 +48,68 @@ html {
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
 .main {
   margin: 60px auto;
-  max-width: 1000px; }
+  max-width: 1000px;
   @media screen and (min-width: 768px) {
-    .main {
-      margin: 114px auto; } }
+    margin: 114px auto;
+  }
+}
 
 .navigation {
   display: none;
-  padding: 16px; }
-  .navigation__link {
+  padding: 16px;
+  &__link {
     display: block;
     text-decoration: none;
     color: hotpink;
-    font-size: 24px; }
-  .navigation__link:hover {
-    border-bottom: 1px solid hotpink; }
+    font-size: 24px;
+  }
+  &__link:hover {
+    border-bottom: 1px solid hotpink;
+  }
   @media screen and (min-width: 768px) {
-    .navigation {
-      padding: 32px;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap; } }
+    padding: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
 
 .navigation--open {
-  display: block; }
+  display: block;
+}
 
 .week-summary {
   background-color: #ffffff;
   color: #333333;
-  border-radius: 11px; }
-  .week-summary__description {
-    color: #222222; }
-  .week-summary__title {
+  border-radius: 11px;
+  &__description {
+    color: #222222;
+  }
+  &__title {
     padding-top: 8px;
-    padding-left: 8px; }
-  .week-summary__title::before {
+    padding-left: 8px;
+  }
+  &__title::before {
     content: "";
     display: inline-block;
     width: 0;
     height: 0;
     border-top: 8px solid transparent;
     border-left: 16px solid hotpink;
-    border-bottom: 8px solid transparent; }
-  .week-summary__title::after {
+    border-bottom: 8px solid transparent;
+  }
+  &__title::after {
     content: "";
     display: inline-block;
     width: 0;
     height: 0;
     border-top: 8px solid transparent;
     border-right: 16px solid hotpink;
-    border-bottom: 8px solid transparent; }
+    border-bottom: 8px solid transparent;
+  }
+}
